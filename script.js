@@ -3,7 +3,7 @@ async function convertCurrency() {
   const fromCurrency = document.getElementById("fromCurrency").value;
   const toCurrency = document.getElementById("toCurrency").value;
   const resultDiv = document.getElementById("result");
-  const apiKey = "1a1a535d617bd52793da29f1"; // Substitua por uma chave válida
+  const apiKey = "1a1a535d617bd52793da29f1"; // api cotação
 
   if (isNaN(amount) || amount <= 0) {
     resultDiv.innerHTML = "⚠️ Por favor, insira um valor válido.";
