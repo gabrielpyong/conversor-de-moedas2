@@ -1,96 +1,53 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, sans-serif;
-}
-
 body {
-    background-image: url('https://i.pinimg.com/736x/89/bd/bd/89bdbda329ac52f00290ed3d2afcbd26.jpg'); 
-    background-size: cover; 
-    background-position: left;
-    background-repeat: no-repeat; 
-}
-
-body::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url('https://i.pinimg.com/736x/89/bd/bd/89bdbda329ac52f00290ed3d2afcbd26.jpg');
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
-    filter: brightness(50%);
-    z-index: -1; 
+    font-family: Arial, sans-serif;
+    color: white;
+    text-align: center;
 }
 
 body {
-  background-color: #f0f2f5;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
+    background-image: url('https://www.meme-arsenal.com/memes/1a188216693798fd4686c1c1f564603e.jpg'); /* Verifique o caminho correto */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
+
 .container {
-  background-color: white;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  width: 400px;
+    background: rgba(0, 0, 0, 0.7); /* Fundo preto transparente */
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    margin: 100px auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 h1 {
-  text-align: center;
-  margin-bottom: 20px;
-  color: #333;
+    color: white;
+    font-size: 22px;
 }
 
-.converter-box {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
-.input-group {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-}
-
-label {
-  color: #666;
+input, select, button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: none;
+    box-sizing: border-box;
 }
 
 input, select {
-  padding: 8px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  font-size: 16px;
+    background: rgba(255, 255, 255, 0.8);
 }
 
 button {
-  padding: 10px;
-  background-color: #14181f;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 16px;
+    background: #ffcc00;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
 }
 
 button:hover {
-  background-color: #45a049;
-}
-
-.result {
-  text-align: center;
-  margin-top: 15px;
-  padding: 10px;
-  background-color: #f8f9fa;
-  border-radius: 5px;
-  min-height: 40px;
+    background: #e6b800;
 }
