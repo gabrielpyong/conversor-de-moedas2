@@ -8,3 +8,6 @@ Um conversor de moedas simples que converte entre Euro, Real, Yuan, Pesos Argent
 1. Clone o repositório ou baixe como ZIP:
    ```bash
    git clone https://github.com/gabrielpyong/conversor-de-moedas.git
+2. Você tambem pode testar pelo codepen: https://codepen.io/gabrielpyong/pen/vEYQxzm
+
+_projeto feito para estudo_
