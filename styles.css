@@ -15,7 +15,7 @@ body {
 
 
 .container {
-    background: rgba(0, 0, 0, 0.7); /* Fundo preto transparente */
+    background: rgba(0, 0, 0, 0.7);
     padding: 20px;
     border-radius: 10px;
     width: 300px;
