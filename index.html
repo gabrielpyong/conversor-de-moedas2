@@ -8,38 +8,40 @@
 </head>
 <body>
     <div class="container">
-        <h1>Conversor de Moedas</h1>
-        <div class="converter-box">
-            <div class="input-group">
-                <label for="amount">Valor:</label>
-                <input type="number" id="amount" placeholder="Digite o valor" step="0.01">
+        <div class="content">
+            <h1>Conversor de Moedas</h1>
+            <div class="converter-box">
+                <div class="input-group">
+                    <label for="amount">Valor:</label>
+                    <input type="number" id="amount" placeholder="Digite o valor" step="0.01" aria-label="Valor a converter">
+                </div>
+                <div class="input-group">
+                    <label for="fromCurrency">De:</label>
+                    <select id="fromCurrency" aria-label="Moeda de origem">
+                        <option value="EUR">Euro (€)</option>
+                        <option value="BRL">Real (R$)</option>
+                        <option value="CNY">Yuan (¥)</option>
+                        <option value="ARS">Peso Argentino ($)</option>
+                        <option value="GBP">Libra (£)</option>
+                        <option value="USD">Dólar ($)</option>
+                        <option value="BTC">Bitcoin (₿)</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label for="toCurrency">Para:</label>
+                    <select id="toCurrency" aria-label="Moeda de destino">
+                        <option value="EUR">Euro (€)</option>
+                        <option value="BRL">Real (R$)</option>
+                        <option value="CNY">Yuan (¥)</option>
+                        <option value="ARS">Peso Argentino ($)</option>
+                        <option value="GBP">Libra (£)</option>
+                        <option value="USD">Dólar ($)</option>
+                        <option value="BTC">Bitcoin (₿)</option>
+                    </select>
+                </div>
+                <button onclick="convertCurrency()">Converter</button>
+                <div id="result" class="result"></div>
             </div>
-            <div class="input-group">
-                <label for="fromCurrency">De:</label>
-                <select id="fromCurrency">
-                    <option value="EUR">Euro (€)</option>
-                    <option value="BRL">Real (R$)</option>
-                    <option value="CNY">Yuan (¥)</option>
-                    <option value="ARS">Peso Argentino ($)</option>
-                    <option value="GBP">Libra (£)</option>
-                    <option value="USD">Dólar ($)</option>
-                    <option value="BTC">Bitcoin (₿)</option>
-                </select>
-            </div>
-            <div class="input-group">
-                <label for="toCurrency">Para:</label>
-                <select id="toCurrency">
-                    <option value="EUR">Euro (€)</option>
-                    <option value="BRL">Real (R$)</option>
-                    <option value="CNY">Yuan (¥)</option>
-                    <option value="ARS">Peso Argentino ($)</option>
-                    <option value="GBP">Libra (£)</option>
-                    <option value="USD">Dólar ($)</option>
-                    <option value="BTC">Bitcoin (₿)</option>
-                </select>
-            </div>
-            <button onclick="convertCurrency()">Converter</button>
-            <div id="result" class="result"></div>
         </div>
     </div>
     <script src="script.js"></script>
